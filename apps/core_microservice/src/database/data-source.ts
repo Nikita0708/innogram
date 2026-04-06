@@ -11,6 +11,7 @@ export const AppDataSource = new DataSource({
     username: process.env.POSTGRES_USER || 'innogram_user',
     password: process.env.POSTGRES_PASSWORD || 'innogram_password',
     database: process.env.POSTGRES_DB || 'innogram',
+    schema: 'public',
     entities: [join(process.cwd(), 'src/database/entities/**/*.entity{.ts,.js}')],
     migrations: [join(process.cwd(), 'src/database/migrations/*{.ts,.js}')],
     synchronize: false,

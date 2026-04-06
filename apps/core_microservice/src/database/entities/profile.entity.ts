@@ -1,13 +1,13 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn, OneToMany } from 'typeorm';
+import { Entity, PrimaryColumn, Column, CreateDateColumn, ManyToOne, JoinColumn, OneToMany, UpdateDateColumn } from 'typeorm';
 import { User } from './user.entity';
 import { ProfileFollow } from './profile-follow.entity';
 
 @Entity({ name: 'profiles', schema: 'main' })
 export class Profile {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn({ type: 'varchar', length: 36 })
   id: string;
 
-  @Column({ type: 'uuid' })
+  @Column({ type: 'varchar', length: 36 })
   user_id: string;
 
   @Column({ type: 'varchar', length: 50, unique: true })
@@ -31,13 +31,13 @@ export class Profile {
   @CreateDateColumn()
   created_at: Date;
 
-  @Column({ type: 'uuid' })
+  @Column({ type: 'varchar', length: 36 })
   created_by: string;
 
   @UpdateDateColumn()
   updated_at: Date;
 
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ type: 'varchar', length: 36, nullable: true })
   updated_by: string;
 
   @Column({ type: 'boolean', default: false })
