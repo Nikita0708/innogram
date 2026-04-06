@@ -4,7 +4,12 @@ import { ConfigModule } from '@nestjs/config';
 import { HttpModule } from '@nestjs/axios';
 
 // Modules
-// ... will be added in the next PRs
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
+import { PostsModule } from './posts/posts.module';
+import { CommentsModule } from './comments/comments.module';
+import { ChatsModule } from './chats/chats.module';
+import { NotificationsModule } from './notifications/notifications.module';
 
 // Database configuration
 import { DatabaseConfig } from './database/database.config';
@@ -23,7 +28,12 @@ import { DatabaseConfig } from './database/database.config';
       maxRedirects: 5,
     }),
     // Feature modules
-    // ... will be added in the next PRs
+    AuthModule,
+    UsersModule,
+    PostsModule,
+    CommentsModule,
+    ChatsModule,
+    NotificationsModule,
   ],
   controllers: [],
   providers: [],

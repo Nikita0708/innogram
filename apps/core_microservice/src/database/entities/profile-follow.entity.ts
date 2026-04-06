@@ -1,16 +1,17 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn, Unique } from 'typeorm';
+import { Entity, PrimaryColumn, Column, CreateDateColumn, ManyToOne, JoinColumn, Unique, Check, UpdateDateColumn } from 'typeorm';
 import { Profile } from './profile.entity';
 
 @Entity({ name: 'profiles_follows', schema: 'main' })
 @Unique(['follower_profile_id', 'followed_profile_id'])
+@Check(`"follower_profile_id" != "followed_profile_id"`)
 export class ProfileFollow {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn({ type: 'varchar', length: 36 })
   id: string;
 
-  @Column({ type: 'uuid' })
+  @Column({ type: 'varchar', length: 36 })
   follower_profile_id: string;
 
-  @Column({ type: 'uuid' })
+  @Column({ type: 'varchar', length: 36 })
   followed_profile_id: string;
 
   @Column({ type: 'boolean', nullable: true })
@@ -19,21 +20,20 @@ export class ProfileFollow {
   @CreateDateColumn()
   created_at: Date;
 
-  @Column({ type: 'uuid' })
+  @Column({ type: 'varchar', length: 36 })
   created_by: string;
 
   @UpdateDateColumn()
   updated_at: Date;
 
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ type: 'varchar', length: 36, nullable: true })
   updated_by: string;
 
-  // Relations
-  @ManyToOne(() => Profile, profile => profile.following)
+  @ManyToOne(() => Profile, profile => profile.following, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'follower_profile_id' })
   followerProfile: Profile;
 
-  @ManyToOne(() => Profile, profile => profile.followers)
+  @ManyToOne(() => Profile, profile => profile.followers, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'followed_profile_id' })
   followedProfile: Profile;
 }
