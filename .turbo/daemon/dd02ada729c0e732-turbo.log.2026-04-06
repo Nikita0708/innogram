@@ -190,3 +190,333 @@
 2026-04-06T08:18:49.591109Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
 2026-04-06T08:21:38.491387Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/users.module.ts")}
 2026-04-06T08:21:38.491406Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T08:50:18.017889Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto/login.dto.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto"), AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto/refresh-token.dto.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto/signup.dto.ts")}
+2026-04-06T08:50:18.018117Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:03:11.613314Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto")}
+2026-04-06T09:03:11.613335Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:03:11.613359Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:03:24.814227Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:03:24.814237Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:04:18.114488Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:04:18.114602Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:04:43.014863Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:04:43.014874Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:04:59.115067Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:04:59.115077Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:05:27.914498Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:05:27.914511Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:07:30.916140Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:07:30.916163Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:07:30.916198Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:09:27.416012Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:09:27.416036Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:09:32.214736Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:09:32.214748Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:10:04.015831Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:10:04.015839Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:11:12.520941Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:11:12.520957Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:11:25.616232Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:11:25.616242Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:11:51.616576Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto/signup.dto.ts")}
+2026-04-06T09:11:51.616588Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:25.516600Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:25.516611Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:26.516536Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:26.516546Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:33.016790Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:33.016800Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:33.716349Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:33.716359Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:44.717213Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:44.717222Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:12:51.216180Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:12:51.216194Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:13:04.117491Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:13:04.117500Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:13:11.216105Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:13:11.216118Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:21.916566Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:14:21.916578Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:31.416909Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:14:31.416923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:41.916201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:14:41.916211Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:46.717403Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:14:46.717423Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:54.217374Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:14:54.217385Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:14:54.217410Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:15:12.216344Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/database/entities/profile.entity.ts")}
+2026-04-06T09:15:12.216356Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:15:12.216381Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:15:26.817358Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:15:26.817371Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:15:26.817401Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:15:44.117363Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:15:44.117375Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:16:40.518337Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:16:40.518348Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:17:44.018459Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:17:44.018482Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:18:34.518369Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:18:34.518385Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:18:47.018858Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:18:47.018868Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:18:58.717883Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:18:58.717893Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:19:01.017393Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:19:01.017405Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:19:19.518691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:19:19.518700Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:19:38.818244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:19:38.818281Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:19:47.217841Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:19:47.217852Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:20:06.617950Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:20:06.617964Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:20:29.218395Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:20:29.218404Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:21:22.118712Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:21:22.118748Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:21:42.318311Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:21:42.318321Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:21:49.818690Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:21:49.818699Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:22:31.219553Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:22:31.219574Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:22:37.418065Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:22:37.418075Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:22:57.018989Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:22:57.019002Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:23:11.419024Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:23:11.419037Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:23:37.020165Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:23:37.020176Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:23:48.520042Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:23:48.520053Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:23:48.520079Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:24:14.421531Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:24:14.421546Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:25:42.020339Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:25:42.020359Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:25:53.720248Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:25:53.720267Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:25:56.519799Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:25:56.519807Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:25:59.620191Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:25:59.620247Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:25:59.620304Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:26:58.320071Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:26:58.320090Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:27:20.720259Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:27:20.720268Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:36:49.722478Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto")}
+2026-04-06T09:36:49.722499Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:36:49.722530Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:36:57.121160Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/crea")}
+2026-04-06T09:36:57.121168Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:37:08.522049Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/crea"), AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T09:37:08.522057Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:58:30.858835Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T09:58:30.858860Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:58:30.878189Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T09:58:34.659448Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T09:58:34.659458Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:58:41.659286Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T09:58:41.659296Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:58:45.058467Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T09:58:45.058479Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T09:58:55.958481Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T09:58:55.958490Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:01:01.860110Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:01:01.860134Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:01:26.859342Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:01:26.859352Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:01:26.859372Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:01:31.360032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:01:31.360045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:01:36.159542Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/database/entities/post.entity.ts")}
+2026-04-06T10:01:36.159554Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:01:36.178306Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:02:34.860573Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:02:34.860593Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:02:34.863043Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:04:16.260838Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:04:16.260855Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:11:25.162449Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:11:25.162465Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:11:40.161994Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:11:40.162003Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:13:13.363012Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:13:13.363030Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:14:06.662740Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:14:06.662749Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:14:29.562897Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/auth/dto/refresh-token.dto.ts")}
+2026-04-06T10:14:29.562912Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:15:12.963641Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:15:12.963687Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:15:38.963760Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:15:38.963771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:16:14.562792Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:16:14.562802Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:17:13.062552Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:17:13.062568Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:17:13.073084Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:18:16.463177Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:18:16.463210Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:18:45.762954Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:18:45.762965Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:18:47.762912Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T10:18:47.762923Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:19:20.264181Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/notifications/dto")}
+2026-04-06T10:19:20.264201Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:19:20.264242Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:20:46.462796Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/notifications/dto")}
+2026-04-06T10:20:46.462807Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:20:46.462840Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:50:22.267427Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:50:22.267445Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:51:36.768454Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:51:36.768473Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:51:40.669278Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:51:40.669291Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:51:52.468894Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:51:52.468905Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:51:57.669317Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:51:57.669328Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:53:28.869260Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/update-post.dto.ts")}
+2026-04-06T10:53:28.869281Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:53:28.869321Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T10:53:44.269425Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:53:44.269433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:53:48.769061Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:53:48.769072Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:54:04.069996Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:54:04.070004Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:54:17.069707Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:54:17.069728Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:55:12.168629Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:55:12.168638Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:55:48.669916Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:55:48.669934Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:55:56.769115Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:55:56.769126Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:56:14.270304Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:56:14.270314Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:57:06.170515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:57:06.170535Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T10:59:12.769300Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/get-posts-query.dto.ts")}
+2026-04-06T10:59:12.769315Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:01:28.170311Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T11:01:28.170332Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:01:28.199249Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T11:04:25.471834Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T11:04:25.471852Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:05:59.071411Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T11:05:59.071429Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:05:59.071451Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T11:06:10.770733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto")}
+2026-04-06T11:06:10.770745Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:06:10.770774Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T11:06:18.472249Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:06:18.472258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:06:42.571920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:06:42.571929Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:06:46.772202Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:06:46.772211Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:06:57.671838Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:06:57.671847Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:08:00.371985Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:08:00.371996Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:08:59.271790Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:08:59.271801Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:09:46.771869Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:09:46.771879Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:10:02.372503Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:10:02.372513Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:10:37.473392Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:10:37.473421Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:10:53.173273Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:10:53.173284Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:12:07.572387Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:12:07.572408Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:12:50.873739Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:12:50.873751Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:12:51.473257Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:12:51.473270Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:13:15.873451Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:13:15.873461Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:13:28.973209Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:13:28.973220Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:13:44.673295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:13:44.673304Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:13:55.673077Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:13:55.673090Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:14:10.273795Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:14:10.273814Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:18:28.174056Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:18:28.174080Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:20:27.074538Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/dto/create-post.dto.ts")}
+2026-04-06T11:20:27.074561Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:35:37.582622Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/add-comment.dto.ts")}
+2026-04-06T11:35:37.582833Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:37:47.577762Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:37:47.577770Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:42:30.079758Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:42:30.079784Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:42:33.378615Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:42:33.378624Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:42:58.778248Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:42:58.778258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:15.979596Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:15.979605Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:34.479589Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:34.479599Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:37.879046Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:37.879058Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:44.179690Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:44.179702Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:44.779482Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:44.779494Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:43:52.479227Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:43:52.479239Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:44:13.179896Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:44:13.179909Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:44:13.179939Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-06T11:44:51.580400Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:44:51.580414Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:44:59.980690Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/comments/dto/get-comments-query-dto.ts")}
+2026-04-06T11:44:59.980700Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:47:30.780492Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users copy/users.module.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/users copy/dto"), AnchoredSystemPathBuf("apps/core_microservice/src/users copy/users.service.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/users copy"), AnchoredSystemPathBuf("apps/core_microservice/src/users copy/users.controller.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/users copy/dto/update-user.dto.ts")}
+2026-04-06T11:47:30.780510Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:47:37.880628Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users copy"), AnchoredSystemPathBuf("apps/core_microservice/src/profile")}
+2026-04-06T11:47:37.880637Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:47:40.879697Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles"), AnchoredSystemPathBuf("apps/core_microservice/src/profile")}
+2026-04-06T11:47:40.879707Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:47:47.879592Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/dto/update-profile.dto.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/profiles/dto/update-user.dto.ts")}
+2026-04-06T11:47:47.879602Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:47:52.380646Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/users/dto/update-user.dto.ts")}
+2026-04-06T11:47:52.380661Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:48:03.280846Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/users.controller.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:48:03.280854Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:48:09.681051Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.module.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/profiles/users.module.ts")}
+2026-04-06T11:48:09.681059Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:48:14.279903Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.service.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/profiles/users.service.ts")}
+2026-04-06T11:48:14.279912Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:48:15.880415Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.module.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:48:15.880424Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:49:18.881544Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.service.ts")}
+2026-04-06T11:49:18.881559Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:49:31.081258Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.module.ts")}
+2026-04-06T11:49:31.081270Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:49:40.580398Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.module.ts")}
+2026-04-06T11:49:40.580409Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:49:59.080849Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:49:59.080858Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:50:03.981129Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:50:03.981138Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:50:07.980843Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:50:07.980852Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-06T11:50:10.881266Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/profiles/profile.controller.ts")}
+2026-04-06T11:50:10.881276Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
