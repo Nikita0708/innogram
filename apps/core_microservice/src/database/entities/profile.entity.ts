@@ -43,6 +43,9 @@ export class Profile {
   @Column({ type: 'boolean', default: false })
   deleted: boolean;
 
+  @Column({ type: 'timestamp', nullable: true })
+  deleted_at: Date;
+
   // Relations
   @ManyToOne(() => User, user => user.profiles)
   @JoinColumn({ name: 'user_id' })

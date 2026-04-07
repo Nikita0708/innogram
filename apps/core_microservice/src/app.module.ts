@@ -10,6 +10,7 @@ import { PostsModule } from './posts/posts.module';
 import { CommentsModule } from './comments/comments.module';
 import { ChatsModule } from './chats/chats.module';
 import { NotificationsModule } from './notifications/notifications.module';
+import { ProfilesModule } from './profiles/profile.module';
 
 // Database configuration
 import { DatabaseConfig } from './database/database.config';
@@ -34,6 +35,7 @@ import { DatabaseConfig } from './database/database.config';
     CommentsModule,
     ChatsModule,
     NotificationsModule,
+    ProfilesModule,
   ],
   controllers: [],
   providers: [],
