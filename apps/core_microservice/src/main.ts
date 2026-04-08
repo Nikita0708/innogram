@@ -5,12 +5,14 @@ import { ExpressAdapter } from '@nestjs/platform-express';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './filters/http-exception.filter';
 import helmet from 'helmet';
+import * as cookieParser from 'cookie-parser';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, new ExpressAdapter());
 
   app.useGlobalFilters(new HttpExceptionFilter());
 
+  app.use(cookieParser());
   app.use(helmet())
 
   app.enableCors({
