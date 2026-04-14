@@ -1,0 +1,65 @@
+2026-04-13T15:29:42.369365Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/.turbo-cookie"), AnchoredSystemPathBuf(".turbo/cookies/1.cookie")}
+2026-04-13T15:29:42.369373Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:29:44.069750Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:29:44.069771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:30:15.669788Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json"), AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json.tmp.27199.1776094215638")}
+2026-04-13T15:30:15.669820Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:30:57.368767Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json")}
+2026-04-13T15:30:57.368797Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:30:57.386070Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2026-04-13T15:31:10.769648Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/2.cookie")}
+2026-04-13T15:31:10.769657Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:31:12.269771Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:31:12.269792Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:32:04.770368Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/3.cookie")}
+2026-04-13T15:32:04.770382Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:40:36.970465Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json")}
+2026-04-13T15:40:36.970490Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:40:41.370170Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/4.cookie")}
+2026-04-13T15:40:41.370178Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:40:42.670989Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:40:42.670999Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:41:21.270038Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json")}
+2026-04-13T15:41:21.270067Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:41:25.070824Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json")}
+2026-04-13T15:41:25.070835Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:41:36.570454Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.json")}
+2026-04-13T15:41:36.570468Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:41:47.871371Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/5.cookie")}
+2026-04-13T15:41:47.871382Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:41:49.070235Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:41:49.070262Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:42:28.671933Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/6.cookie")}
+2026-04-13T15:42:28.671950Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:45:56.972567Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:45:56.972588Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:45:57.671893Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:45:57.671902Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:46:50.371800Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/package.json")}
+2026-04-13T15:46:50.371818Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:47:17.172087Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/7.cookie")}
+2026-04-13T15:47:17.172096Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2026-04-13T15:47:17.271879Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:47:17.271893Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:47:18.671990Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:47:18.671999Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:47:49.272406Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/assets/assets.module.ts")}
+2026-04-13T15:47:49.272416Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:47:49.572083Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:47:49.572110Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:52:35.673456Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/assets/assets.service.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/assets/assets.service.ts.tmp.30751.1776095555580")}
+2026-04-13T15:52:35.673482Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:52:36.173893Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:52:36.173902Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:52:37.872666Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/assets/assets.service.ts"), AnchoredSystemPathBuf("apps/core_microservice/src/assets/assets.service.ts.tmp.30751.1776095557785")}
+2026-04-13T15:52:37.872680Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T15:52:38.173487Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T15:52:38.173496Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T16:04:40.876658Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/posts.controller.ts")}
+2026-04-13T16:04:40.876775Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T16:04:41.275804Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T16:04:41.275812Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T16:04:55.475685Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/src/posts/posts.controller.ts")}
+2026-04-13T16:04:55.475693Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))
+2026-04-13T16:04:55.775793Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/core_microservice/tsconfig.tsbuildinfo")}
+2026-04-13T16:04:55.775802Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@innogram/core-microservice"), path: AnchoredSystemPathBuf("apps/core_microservice") }}))

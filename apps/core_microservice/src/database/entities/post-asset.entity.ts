@@ -29,7 +29,7 @@ export class PostAsset {
   @Column({ type: 'varchar', length: 36, nullable: true })
   updated_by: string;
 
-  @ManyToOne(() => Post, { onDelete: 'CASCADE' })
+  @ManyToOne(() => Post, (post) => post.post_assets, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'post_id' })
   post: Post;
 

@@ -8,7 +8,7 @@ export class CreatePostDto {
   @MinLength(1, { message: 'Content must not be empty' })
   content: string;
 
-  @ApiProperty({ example: 'This is my post about my dog, her name is Jane', description: 'Content of the post' })
+  @ApiProperty({ example: 'user-1', description: 'Profile Id' })
   @IsNotEmpty({ message: 'profile_id is required' })
   @IsString({ message: 'profile_id must be a string' })
   @MaxLength(36, { message: 'profile id must be 36 or less characters' })

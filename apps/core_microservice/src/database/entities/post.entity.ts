@@ -1,5 +1,6 @@
-import { Entity, Column, CreateDateColumn, ManyToOne, JoinColumn, PrimaryColumn, UpdateDateColumn } from 'typeorm';
+import { Entity, Column, CreateDateColumn, ManyToOne, JoinColumn, PrimaryColumn, UpdateDateColumn, OneToMany } from 'typeorm';
 import { Profile } from './profile.entity';
+import { PostAsset } from './post-asset.entity';
 
 @Entity({ name: 'posts', schema: 'main' })
 export class Post {
@@ -31,4 +32,7 @@ export class Post {
   @ManyToOne(() => Profile, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'profile_id' })
   profile: Profile;
+
+  @OneToMany(() => PostAsset, (PostAsset) => PostAsset.post)
+  post_assets: PostAsset[]
 }
