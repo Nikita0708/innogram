@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsArray, IsOptional, IsString } from 'class-validator';
 
-export class CreatePostDto {
+export class UpdatePostDto {
   @ApiProperty({ example: 'This is my post about my dog, her name is Jane', description: 'Content of the post', required: false })
   @IsOptional()
   @IsString({ message: 'Content must be a string' })

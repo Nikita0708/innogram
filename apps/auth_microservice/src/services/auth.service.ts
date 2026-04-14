@@ -211,7 +211,6 @@ export class AuthService {
   }
 
   async handleGoogleOAuth(code: string) {
-    // 1. Exchange code for Google tokens
     const tokenRes = await axios.post<{
       access_token: string;
       id_token: string;
@@ -225,7 +224,6 @@ export class AuthService {
 
     const { access_token } = tokenRes.data;
 
-    // 2. Fetch user info from Google
     const userInfoRes = await axios.get<{
       sub: string;
       email: string;
@@ -237,7 +235,6 @@ export class AuthService {
 
     const { sub: googleId, email, name, picture } = userInfoRes.data;
 
-    // 3. Check if Google account already exists → returning user
     const existingGoogleAccount = await this.accountRepository.findOne({
       where: { provider: 'google', provider_id: googleId },
     });
@@ -252,13 +249,11 @@ export class AuthService {
       return { ...tokens, userId: user.id, email };
     }
 
-    // 4. Check if local account with same email exists → link
     const existingLocalAccount = await this.accountRepository.findOne({
       where: { email },
     });
 
     if (existingLocalAccount) {
-      // Link: add Google account to the existing user
       await this.accountRepository.save({
         id: uuidv4(),
         user_id: existingLocalAccount.user_id,
@@ -277,7 +272,6 @@ export class AuthService {
       return { ...tokens, userId: user.id, email };
     }
 
-    // 5. New user — create User + Account + Profile
     const userId = uuidv4();
     const username = await this.generateUniqueUsername();
 

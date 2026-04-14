@@ -14,6 +14,8 @@ import { ProfilesModule } from './profiles/profile.module';
 
 // Database configuration
 import { DatabaseConfig } from './database/database.config';
+import { CloudinaryModule } from './cloudinary/cloudinary.module';
+import { AssetsModule } from './assets/assets.module';
 
 @Module({
   imports: [
@@ -29,6 +31,8 @@ import { DatabaseConfig } from './database/database.config';
       maxRedirects: 5,
     }),
     // Feature modules
+    CloudinaryModule,
+    AssetsModule,
     AuthModule,
     UsersModule,
     PostsModule,

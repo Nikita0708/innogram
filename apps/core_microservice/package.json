@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "nest build",
-    "dev": "nest start --watch",
+    "dev": "rm -f tsconfig.tsbuildinfo && nest start --watch",
     "format": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "start": "nest start",
     "start:dev": "nest start --watch",
