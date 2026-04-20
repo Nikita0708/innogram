@@ -5,9 +5,10 @@ import { AssetsController } from "./assets.controller";
 import { AssetsService } from "./assets.service";
 import { Asset } from "@/database/entities/asset.entity";
 import { AuthModule } from "@/auth/auth.module";
+import { Profile } from "@/database/entities/profile.entity";
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Asset]), CloudinaryModule, AuthModule],
+  imports: [TypeOrmModule.forFeature([Asset, Profile]), CloudinaryModule, AuthModule],
   controllers: [AssetsController],
   providers: [AssetsService],
   exports: [AssetsService]

@@ -4,6 +4,7 @@ export interface CurrentUser {
   id: string;
   email: string;
   role: string;
+  profileId: string | null;
 }
 
 export const CurrentUser = createParamDecorator(
