@@ -5,18 +5,18 @@ import {
   InternalServerErrorException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 import axios, { AxiosError } from 'axios';
 
 import { SignUpDto } from './dto/signup.dto';
 import { LoginDto } from './dto/login.dto';
+import { CoreConfigService } from '../common/config/core-config.service';
 
 @Injectable()
 export class AuthService {
   private readonly authServiceUrl: string;
 
-  constructor(private readonly configService: ConfigService) {
-    this.authServiceUrl = this.configService.get('AUTH_SERVICE_URL', 'http://localhost:3002');
+  constructor(private readonly config: CoreConfigService) {
+    this.authServiceUrl = this.config.authServiceUrl;
   }
 
   async handleSignUp(dto: SignUpDto) {

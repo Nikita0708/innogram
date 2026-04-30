@@ -15,10 +15,12 @@ import { ProfilesModule } from './profiles/profile.module';
 // Database configuration
 import { DatabaseConfig } from './database/database.config';
 import { CloudinaryModule } from './cloudinary/cloudinary.module';
+import { AppConfigModule } from './common/config/app-config.module';
 import { AssetsModule } from './assets/assets.module';
 
 @Module({
   imports: [
+    AppConfigModule,
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: ['.env', '../../.env'],

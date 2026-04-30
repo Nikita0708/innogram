@@ -1,7 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsArray, IsNotEmpty, IsOptional, IsString, MaxLength, MinLength } from 'class-validator';
+import { ICreatePostRequest } from '@innogram/types';
 
-export class CreatePostDto {
+export class CreatePostDto implements ICreatePostRequest {
   @ApiProperty({ example: 'This is my post about my dog, her name is Jane', description: 'Content of the post' })
   @IsNotEmpty({ message: 'Content is required' })
   @IsString({ message: 'Content must be a string' })

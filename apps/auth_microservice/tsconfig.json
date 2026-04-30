@@ -23,9 +23,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@/shared/*": ["../../packages/shared/*"],
-      "@/types/*": ["../../packages/types/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*"],

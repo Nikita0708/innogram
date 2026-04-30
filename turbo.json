@@ -19,6 +19,13 @@
       "cache": false
     },
     "db:migrate": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
+    "db:migrate:generate": {
+      "cache": false
+    },
+    "db:migrate:revert": {
       "cache": false
     },
     "db:seed": {

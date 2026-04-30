@@ -2,16 +2,20 @@ import { Body, Controller, Get, HttpCode, Param, Post, Query, Req, Res, UseGuard
 import { ApiBearerAuth, ApiCookieAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Request, Response } from 'express';
 
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
 import { AuthService } from './auth.service';
 import { SignUpDto } from './dto/signup.dto';
 import { LoginDto } from './dto/login.dto';
 import { setAuthCookies } from './helpers/setAuthCookies';
+import { CoreConfigService } from '../common/config/core-config.service';
 
 @ApiTags('Authentication')
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) { }
+  constructor(
+    private readonly authService: AuthService,
+    private readonly config: CoreConfigService,
+  ) {}
 
   @Post('signup')
   @ApiOperation({ summary: 'User registration' })
@@ -21,7 +25,7 @@ export class AuthController {
   async signUp(@Body() dto: SignUpDto, @Res() res: Response) {
     const result = await this.authService.handleSignUp(dto);
 
-    setAuthCookies(res, result.accessToken, result.refreshToken);
+    setAuthCookies(res, result.accessToken, result.refreshToken, this.config.isProduction);
 
     return res.status(201).json({
       userId: result.userId,
@@ -38,7 +42,7 @@ export class AuthController {
   async login(@Body() dto: LoginDto, @Res() res: Response) {
     const result = await this.authService.handleLogin(dto);
 
-    setAuthCookies(res, result.accessToken, result.refreshToken);
+    setAuthCookies(res, result.accessToken, result.refreshToken, this.config.isProduction);
 
     return res.status(200).json({
       userId: result.userId,
@@ -61,7 +65,7 @@ export class AuthController {
 
     const tokens = await this.authService.handleRefresh(refreshToken);
 
-    setAuthCookies(res, tokens.accessToken, tokens.refreshToken);
+    setAuthCookies(res, tokens.accessToken, tokens.refreshToken, this.config.isProduction);
 
     return res.status(200).json({ message: 'Token refreshed successfully' });
   }
@@ -86,7 +90,7 @@ export class AuthController {
   ) {
     const result = await this.authService.handleOAuthCallback(provider, code);
 
-    setAuthCookies(res, result.accessToken, result.refreshToken);
+    setAuthCookies(res, result.accessToken, result.refreshToken, this.config.isProduction);
 
     return res.status(200).json({ userId: result.userId, email: result.email });
   }

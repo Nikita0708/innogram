@@ -1,14 +1,16 @@
-import { v2 as cloudinary } from 'cloudinary'
+import { v2 as cloudinary } from 'cloudinary';
+import { CoreConfigService } from '../common/config/core-config.service';
 
-export const CLOUDINARY = 'CLOUDINARY'
+export const CLOUDINARY = 'CLOUDINARY';
 
 export const CloudinaryProvider = {
   provide: CLOUDINARY,
-  useFactory: () => {
+  inject: [CoreConfigService],
+  useFactory: (config: CoreConfigService) => {
     return cloudinary.config({
-      cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-      api_key: process.env.CLOUDINARY_API_KEY,
-      api_secret: process.env.CLOUDINARY_API_SECRET,
-    })
+      cloud_name: config.cloudinaryCloudName,
+      api_key: config.cloudinaryApiKey,
+      api_secret: config.cloudinaryApiSecret,
+    });
   },
-}
+};

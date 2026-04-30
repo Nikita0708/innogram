@@ -1,16 +1,20 @@
+import { ProfileRepository } from '@innogram/database';
 import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
+import { DataSource } from 'typeorm';
 
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { Profile } from '@/database/entities/profile.entity';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Profile]), HttpModule],
+  imports: [HttpModule],
   controllers: [AuthController],
-  providers: [AuthService, JwtAuthGuard],
-  exports: [AuthService, JwtAuthGuard],
+  providers: [
+    { provide: ProfileRepository, useFactory: (ds: DataSource) => new ProfileRepository(ds), inject: [DataSource] },
+    AuthService,
+    JwtAuthGuard,
+  ],
+  exports: [AuthService, JwtAuthGuard, ProfileRepository],
 })
 export class AuthModule {}

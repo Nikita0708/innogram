@@ -1,0 +1,30 @@
+{
+  "name": "@innogram/database",
+  "version": "1.0.0",
+  "description": "Shared database entities, migrations and data-source for Innogram",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "db:migrate": "typeorm-ts-node-commonjs migration:run -d src/data-source.ts",
+    "db:migrate:generate": "typeorm-ts-node-commonjs migration:generate -d src/data-source.ts",
+    "db:migrate:revert": "typeorm-ts-node-commonjs migration:revert -d src/data-source.ts"
+  },
+  "dependencies": {
+    "@innogram/shared": "*",
+    "@innogram/types": "*",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.20.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.0"
+  }
+}

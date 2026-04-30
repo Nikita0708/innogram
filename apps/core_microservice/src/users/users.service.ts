@@ -1,24 +1,13 @@
-import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
-
-import { ERROR_MESSAGES } from '../constants/error-messages';
-import { User } from '../database/entities/user.entity';
+import { UserRepository } from '@innogram/database';
+import { Injectable, NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class UsersService {
-  constructor(
-    @InjectRepository(User)
-    private readonly userRepository: Repository<User>,
-  ) {}
+  constructor(private readonly userRepository: UserRepository) {}
 
   async getCurrentUser(userId: string) {
-    try {
-      // TODO: Implement get current user by ID from JWT token
-      // Find user by ID and return user data
-      throw new Error(ERROR_MESSAGES.METHOD_NOT_IMPLEMENTED);
-    } catch (error) {
-      throw error;
-    }
+    const user = await this.userRepository.findById(userId);
+    if (!user) throw new NotFoundException('User not found');
+    return user;
   }
 }

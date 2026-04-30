@@ -1,7 +1,8 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsBoolean, IsDateString, IsOptional, IsString, MaxLength, MinLength } from "class-validator";
+import { IUpdateProfileRequest } from '@innogram/types';
 
-export class UpdateProfileDto {
+export class UpdateProfileDto implements IUpdateProfileRequest {
   @ApiProperty({ example: 'John Doe', description: 'Display name', required: false })
   @IsOptional()
   @IsString({ message: 'Display Name name must be a string' })

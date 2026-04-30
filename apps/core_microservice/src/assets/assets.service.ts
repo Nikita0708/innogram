@@ -1,17 +1,12 @@
-import { Asset } from "@/database/entities/asset.entity";
+import { Asset, AssetRepository } from '@innogram/database';
 import { BadRequestException, Injectable } from "@nestjs/common";
-import { InjectRepository } from "@nestjs/typeorm";
-import { Repository } from "typeorm";
 import { v2 as cloudinary } from 'cloudinary'
 import { Readable } from "stream";
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class AssetsService {
-  constructor(
-    @InjectRepository(Asset)
-    private readonly assetRepository: Repository<Asset>
-  ) { }
+  constructor(private readonly assetRepository: AssetRepository) { }
 
   async uploadFile(file: Express.Multer.File, userId: string): Promise<Asset> {
     const cloudinaryUrl = await this.uploadToCloudinary(file)
@@ -29,6 +24,10 @@ export class AssetsService {
   }
 
   async uploadFiles(files: Express.Multer.File[], userId: string): Promise<Asset[]> {
+    if (!files || files.length === 0) {
+      throw new BadRequestException('No files provided')
+    }
+
     if (files.length > 10) {
       throw new BadRequestException('Maximum 10 media files per post')
     }

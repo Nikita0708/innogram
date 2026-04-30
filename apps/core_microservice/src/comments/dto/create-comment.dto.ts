@@ -1,7 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsArray, IsNotEmpty, IsOptional, IsString, MaxLength, MinLength } from 'class-validator';
+import { ICreateCommentRequest } from '@innogram/types';
 
-export class CreateCommentDto {
+export class CreateCommentDto implements ICreateCommentRequest {
   @ApiProperty({ example: 'I like this post!', description: 'Content of the comment' })
   @IsNotEmpty({ message: 'Content is required' })
   @IsString({ message: 'Content must be a string' })

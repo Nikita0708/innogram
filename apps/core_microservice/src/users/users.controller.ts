@@ -1,9 +1,9 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
-import { ERROR_MESSAGES, HTTP_STATUS } from '../constants/error-messages';
-import { CurrentUser, CurrentUser as CurrentUserType } from '../decorators/current-user.decorator';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { ERROR_MESSAGES, HTTP_STATUS } from '@innogram/shared';
+import { CurrentUser, CurrentUser as CurrentUserType } from '../common/decorators/current-user.decorator';
+import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
 import { UsersService } from './users.service';
 
 @ApiTags('Users')

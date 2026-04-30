@@ -6,11 +6,11 @@ import { EntityManager } from 'typeorm';
 import axios from 'axios';
 
 import { AppDataSource } from '../db/data-source';
-import { User } from '../entities/user.entity';
-import { Account } from '../entities/account.entity';
-import { Profile } from '../entities/profile.entity';
+import { User, Account, Profile } from '@innogram/database';
 import { SignUpDto } from '../dto/SignUpDto';
 import { LoginDto } from '../dto/LoginDto';
+import { config } from '../common/config/auth-config.service';
+import { UserRepository, AccountRepository, ProfileRepository } from '@innogram/database';
 
 export class ConflictError extends Error {
   constructor(message: string) {
@@ -24,42 +24,32 @@ export class AuthService {
   private readonly jwtExpiresIn: string;
   private readonly refreshExpiresIn: string;
   private readonly redis: Redis;
-
-  private get userRepository() {
-    return AppDataSource.getRepository(User);
-  }
-
-  private get accountRepository() {
-    return AppDataSource.getRepository(Account);
-  }
-
-  private get profileRepository() {
-    return AppDataSource.getRepository(Profile);
-  }
+  private readonly userRepository: UserRepository;
+  private readonly accountRepository: AccountRepository;
+  private readonly profileRepository: ProfileRepository;
 
   constructor() {
-    this.jwtSecret = process.env.JWT_SECRET || 'your-super-secret-jwt-key-here';
-    this.jwtExpiresIn = process.env.JWT_EXPIRES_IN || '15m';
-    this.refreshExpiresIn = process.env.JWT_REFRESH_EXPIRES_IN || '7d';
+    this.jwtSecret = config.jwtSecret;
+    this.jwtExpiresIn = config.jwtExpiresIn;
+    this.refreshExpiresIn = config.jwtRefreshExpiresIn;
     this.redis = new Redis({
-      host: process.env.REDIS_HOST || 'localhost',
-      port: Number(process.env.REDIS_PORT) || 6379,
+      host: config.redisHost,
+      port: config.redisPort,
     });
+    this.userRepository = new UserRepository(AppDataSource);
+    this.accountRepository = new AccountRepository(AppDataSource);
+    this.profileRepository = new ProfileRepository(AppDataSource);
   }
 
   async registerUser(dto: SignUpDto) {
     const { email, password, username, display_name, birthday, bio, avatar_url } = dto;
 
-    const existingAccount = await this.accountRepository.findOne({
-      where: { email },
-    });
+    const existingAccount = await this.accountRepository.findByEmail(email);
     if (existingAccount) {
       throw new ConflictError('Email already registered');
     }
 
-    const existingProfile = await this.profileRepository.findOne({
-      where: { username },
-    });
+    const existingProfile = await this.profileRepository.findByUsername(username);
     if (existingProfile) {
       throw new ConflictError('Username already taken');
     }
@@ -101,9 +91,7 @@ export class AuthService {
   }
 
   async authenticateUser(dto: LoginDto) {
-    const account = await this.accountRepository.findOne({
-      where: { email: dto.email, provider: 'local' },
-    });
+    const account = await this.accountRepository.findByLocalEmail(dto.email);
 
     if (!account) {
       throw new Error('Invalid email or password');
@@ -118,17 +106,13 @@ export class AuthService {
       throw new Error('Invalid email or password');
     }
 
-    const user = await this.userRepository.findOne({
-      where: { id: account.user_id },
-    });
+    const user = await this.userRepository.findById(account.user_id);
 
     if (!user || user.disabled) {
       throw new Error('Account is disabled');
     }
 
-    await this.accountRepository.update(account.id, {
-      last_login_at: new Date(),
-    });
+    await this.accountRepository.updateLastLogin(account.id);
 
     const tokens = await this.generateNewTokens(user.id, user.role);
     return { ...tokens, userId: user.id, email: account.email };
@@ -201,8 +185,8 @@ export class AuthService {
 
   buildGoogleAuthUrl(): string {
     const params = new URLSearchParams({
-      client_id: process.env.GOOGLE_CLIENT_ID!,
-      redirect_uri: process.env.GOOGLE_CALLBACK_URL!,
+      client_id: config.googleClientId,
+      redirect_uri: config.googleCallbackUrl,
       response_type: 'code',
       scope: 'openid email profile',
       access_type: 'offline',
@@ -216,9 +200,9 @@ export class AuthService {
       id_token: string;
     }>('https://oauth2.googleapis.com/token', {
       code,
-      client_id: process.env.GOOGLE_CLIENT_ID,
-      client_secret: process.env.GOOGLE_CLIENT_SECRET,
-      redirect_uri: process.env.GOOGLE_CALLBACK_URL,
+      client_id: config.googleClientId,
+      client_secret: config.googleClientSecret,
+      redirect_uri: config.googleCallbackUrl,
       grant_type: 'authorization_code',
     });
 
@@ -235,23 +219,17 @@ export class AuthService {
 
     const { sub: googleId, email, name, picture } = userInfoRes.data;
 
-    const existingGoogleAccount = await this.accountRepository.findOne({
-      where: { provider: 'google', provider_id: googleId },
-    });
+    const existingGoogleAccount = await this.accountRepository.findByProvider('google', googleId);
 
     if (existingGoogleAccount) {
-      const user = await this.userRepository.findOne({
-        where: { id: existingGoogleAccount.user_id },
-      });
+      const user = await this.userRepository.findById(existingGoogleAccount.user_id);
       if (!user || user.disabled) throw new Error('Account is disabled');
-      await this.accountRepository.update(existingGoogleAccount.id, { last_login_at: new Date() });
+      await this.accountRepository.updateLastLogin(existingGoogleAccount.id);
       const tokens = await this.generateNewTokens(user.id, user.role);
       return { ...tokens, userId: user.id, email };
     }
 
-    const existingLocalAccount = await this.accountRepository.findOne({
-      where: { email },
-    });
+    const existingLocalAccount = await this.accountRepository.findByEmail(email);
 
     if (existingLocalAccount) {
       await this.accountRepository.save({
@@ -264,9 +242,7 @@ export class AuthService {
         last_login_at: new Date(),
         created_by: existingLocalAccount.user_id,
       });
-      const user = await this.userRepository.findOne({
-        where: { id: existingLocalAccount.user_id },
-      });
+      const user = await this.userRepository.findById(existingLocalAccount.user_id);
       if (!user || user.disabled) throw new Error('Account is disabled');
       const tokens = await this.generateNewTokens(user.id, user.role);
       return { ...tokens, userId: user.id, email };
@@ -318,7 +294,7 @@ export class AuthService {
     do {
       const suffix = Array.from({ length: 8 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
       username = `user_${suffix}`;
-      const existing = await this.profileRepository.findOne({ where: { username } });
+      const existing = await this.profileRepository.findByUsername(username);
       exists = !!existing;
     } while (exists);
 

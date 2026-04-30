@@ -3,46 +3,48 @@ import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { AppModule } from './app.module';
-import { HttpExceptionFilter } from './filters/http-exception.filter';
+import { HttpExceptionFilter } from './common/filters/http-exception.filter';
+import { CoreConfigService } from './common/config/core-config.service';
+import { createLogger } from '@innogram/shared';
 import helmet from 'helmet';
 import * as cookieParser from 'cookie-parser';
+
+const logger = createLogger('core-microservice');
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, new ExpressAdapter());
 
-  app.useGlobalFilters(new HttpExceptionFilter());
+  const config = app.get(CoreConfigService);
 
+  app.useGlobalFilters(new HttpExceptionFilter());
   app.use(cookieParser());
-  app.use(helmet())
+  app.use(helmet());
 
   app.enableCors({
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: config.clientUrl,
     credentials: true,
   });
 
-  // Global validation pipe
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true,
     forbidNonWhitelisted: true,
     transform: true,
   }));
 
-  // Swagger documentation
-  const config = new DocumentBuilder()
+  const swaggerConfig = new DocumentBuilder()
     .setTitle('Innogram Core API')
     .setDescription('Core Microservice API for Innogram Social Media Application')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
 
-  const document = SwaggerModule.createDocument(app, config);
+  const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('api/docs', app, document);
 
-  const port = process.env.PORT || 3001;
-  await app.listen(port);
+  await app.listen(config.port);
 
-  console.log(`Core Microservice running on port ${port}`);
-  console.log(`API Documentation available at http://localhost:${port}/api/docs`);
+  logger.info(`Core Microservice running on port ${config.port}`);
+  logger.info(`API Documentation available at http://localhost:${config.port}/api/docs`);
 }
 
 bootstrap();

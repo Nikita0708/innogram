@@ -1,0 +1,16 @@
+{
+  "name": "@innogram/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for Innogram",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.0"
+  }
+}

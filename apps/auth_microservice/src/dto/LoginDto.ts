@@ -1,4 +1,1 @@
-export interface LoginDto {
-  email: string;
-  password: string;
-}
+export type { ILoginRequest as LoginDto } from '@innogram/types';

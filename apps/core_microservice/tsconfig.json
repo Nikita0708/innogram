@@ -21,9 +21,7 @@
     "noFallthroughCasesInSwitch": false,
     "types": ["multer"],
     "paths": {
-      "@/*": ["src/*"],
-      "@/shared/*": ["../../packages/shared/*"],
-      "@/types/*": ["../../packages/types/*"]
+      "@/*": ["src/*"]
     }
   }
 }

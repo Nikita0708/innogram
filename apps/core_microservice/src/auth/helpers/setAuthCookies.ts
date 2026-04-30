@@ -1,12 +1,17 @@
-import { Response } from "express";
+import { Response } from 'express';
 
 const ACCESS_TOKEN_TTL = 15 * 60 * 1000;
 const REFRESH_TOKEN_TTL = 7 * 24 * 60 * 60 * 1000;
 
-export function setAuthCookies(res: Response, accessToken: string, refreshToken: string) {
+export function setAuthCookies(
+  res: Response,
+  accessToken: string,
+  refreshToken: string,
+  isProduction: boolean,
+) {
   const cookieOptions = {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: isProduction,
     sameSite: 'lax' as const,
   };
 

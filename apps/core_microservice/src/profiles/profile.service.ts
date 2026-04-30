@@ -1,71 +1,50 @@
+import { ProfileRepository, ProfileFollowRepository } from '@innogram/database';
 import { BadRequestException, ConflictException, Injectable, NotFoundException } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Profile } from '@/database/entities/profile.entity';
-import { ProfileFollow } from '@/database/entities/profile-follow.entity';
 import { NotificationsService } from '../notifications/notifications.service';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 
 @Injectable()
 export class ProfilesService {
   constructor(
-    @InjectRepository(Profile)
-    private readonly profileRepository: Repository<Profile>,
-
-    @InjectRepository(ProfileFollow)
-    private readonly followRepository: Repository<ProfileFollow>,
-
+    private readonly profileRepository: ProfileRepository,
+    private readonly followRepository: ProfileFollowRepository,
     private readonly notificationsService: NotificationsService,
   ) {}
 
   async getCurrentProfile(userId: string) {
-    const profile = await this.profileRepository.findOne({
-      where: { user_id: userId, deleted: false },
-    });
-
+    const profile = await this.profileRepository.findActiveByUserId(userId);
     if (!profile) throw new NotFoundException('Profile not found');
-
     return profile;
   }
 
   async updateProfile(userId: string, dto: UpdateProfileDto) {
     const profile = await this.getCurrentProfile(userId);
-
-    await this.profileRepository.update(profile.id, { ...dto, updated_by: userId });
-
-    return this.profileRepository.findOne({ where: { id: profile.id } });
+    const { birthday, ...rest } = dto;
+    await this.profileRepository.update(profile.id, {
+      ...rest,
+      ...(birthday ? { birthday: new Date(birthday) } : {}),
+      updated_by: userId,
+    });
+    return this.profileRepository.findById(profile.id);
   }
 
   async deleteProfile(userId: string) {
     const profile = await this.getCurrentProfile(userId);
-
-    await this.profileRepository.update(profile.id, {
-      deleted: true,
-      deleted_at: new Date(),
-      updated_by: userId,
-    });
+    await this.profileRepository.softDelete(profile.id, userId);
   }
 
   async followProfile(followerProfileId: string, followedProfileId: string) {
-    if (followerProfileId === followedProfileId) {
-      throw new BadRequestException('You cannot follow yourself');
-    }
+    if (followerProfileId === followedProfileId) throw new BadRequestException('You cannot follow yourself');
 
-    const existing = await this.followRepository.findOne({
-      where: { follower_profile_id: followerProfileId, followed_profile_id: followedProfileId },
-    });
-
+    const existing = await this.followRepository.findFollow(followerProfileId, followedProfileId);
     if (existing) throw new ConflictException('Already following');
 
-    const targetProfile = await this.profileRepository.findOne({
-      where: { id: followedProfileId },
-    });
-
+    const targetProfile = await this.profileRepository.findById(followedProfileId);
     if (!targetProfile) throw new NotFoundException('Profile not found');
 
-    const follow = this.followRepository.create({
+    const follow = await this.followRepository.save({
       id: uuidv4(),
       follower_profile_id: followerProfileId,
       followed_profile_id: followedProfileId,
@@ -73,12 +52,8 @@ export class ProfilesService {
       created_by: followerProfileId,
     });
 
-    await this.followRepository.save(follow);
-
     await this.notificationsService.sendNotification(
-      followedProfileId,
-      'new_follower',
-      'New follower',
+      followedProfileId, 'new_follower', 'New follower',
       targetProfile.is_public ? 'Someone started following you' : 'Someone sent you a follow request',
       { follower_profile_id: followerProfileId },
     );
@@ -87,75 +62,36 @@ export class ProfilesService {
   }
 
   async unfollowProfile(followerProfileId: string, followedProfileId: string) {
-    const follow = await this.followRepository.findOne({
-      where: { followed_profile_id: followedProfileId, follower_profile_id: followerProfileId },
-    });
-
+    const follow = await this.followRepository.findFollow(followerProfileId, followedProfileId);
     if (!follow) throw new NotFoundException('Follow not found');
-
     await this.followRepository.delete(follow.id);
-
     return { message: 'Unfollowed successfully' };
   }
 
   async getFollowers(profileId: string) {
-    return this.followRepository.find({
-      where: { followed_profile_id: profileId, accepted: true },
-      relations: ['followerProfile'],
-    });
+    return this.followRepository.findFollowers(profileId);
   }
 
   async getFollowing(profileId: string) {
-    return this.followRepository.find({
-      where: { follower_profile_id: profileId, accepted: true },
-      relations: ['followedProfile'],
-    });
+    return this.followRepository.findFollowing(profileId);
   }
 
   async acceptFollowRequest(profileId: string, followerProfileId: string) {
-    const follow = await this.followRepository.findOne({
-      where: {
-        follower_profile_id: followerProfileId,
-        followed_profile_id: profileId,
-        accepted: false,
-      },
-    });
-
+    const follow = await this.followRepository.findPendingFollow(followerProfileId, profileId);
     if (!follow) throw new NotFoundException('Follow request not found');
-
-    await this.followRepository.update(follow.id, { accepted: true });
-
-    await this.notificationsService.sendNotification(
-      followerProfileId,
-      'follow_accepted',
-      'Follow request accepted',
-      'Your follow request was accepted',
-      { profile_id: profileId },
-    );
-
+    await this.followRepository.accept(follow.id);
+    await this.notificationsService.sendNotification(followerProfileId, 'follow_accepted', 'Follow request accepted', 'Your follow request was accepted', { profile_id: profileId });
     return { message: 'Follow request was accepted' };
   }
 
   async rejectFollowRequest(profileId: string, followerProfileId: string) {
-    const follow = await this.followRepository.findOne({
-      where: {
-        follower_profile_id: followerProfileId,
-        followed_profile_id: profileId,
-        accepted: false,
-      },
-    });
-
+    const follow = await this.followRepository.findPendingFollow(followerProfileId, profileId);
     if (!follow) throw new NotFoundException('Follow request not found');
-
     await this.followRepository.delete(follow.id);
-
     return { message: 'Follow request was rejected' };
   }
 
   async getPendingRequests(profileId: string) {
-    return this.followRepository.find({
-      where: { followed_profile_id: profileId, accepted: false },
-      relations: ['followerProfile'],
-    });
+    return this.followRepository.findPendingRequests(profileId);
   }
 }

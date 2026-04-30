@@ -1,10 +1,10 @@
 import { BadRequestException, Controller, Post, UploadedFiles, UseGuards, UseInterceptors } from "@nestjs/common";
 import { ApiBearerAuth, ApiConsumes, ApiOperation, ApiResponse, ApiTags } from "@nestjs/swagger";
 import { AssetsService } from "./assets.service";
-import { JwtAuthGuard } from "@/guards/jwt-auth.guard";
+import { JwtAuthGuard } from "@/common/guards/jwt-auth.guard";
 import { FilesInterceptor } from "@nestjs/platform-express";
-import { CurrentUser, CurrentUser as CurrentUserType } from '../decorators/current-user.decorator';
-import { HTTP_STATUS } from "@/constants/error-messages";
+import { CurrentUser, CurrentUser as CurrentUserType } from '../common/decorators/current-user.decorator';
+import { HTTP_STATUS } from "@innogram/shared";
 
 @ApiTags('Assets')
 @Controller('assets')

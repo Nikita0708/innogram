@@ -1,9 +1,9 @@
 import { Body, Controller, DefaultValuePipe, Delete, Get, Param, ParseIntPipe, Patch, Post, Query, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
-import { HTTP_STATUS } from '../constants/error-messages';
-import { CurrentUser, CurrentUser as CurrentUserType } from '../decorators/current-user.decorator';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { HTTP_STATUS } from '@innogram/shared';
+import { CurrentUser, CurrentUser as CurrentUserType } from '../common/decorators/current-user.decorator';
+import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
 import { PostsService } from './posts.service';
 import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';

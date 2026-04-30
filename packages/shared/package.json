@@ -1,0 +1,24 @@
+{
+  "name": "@innogram/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities, logger, config and constants for Innogram",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@innogram/types": "*",
+    "joi": "^18.1.2",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/winston": "^2.4.4",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,19 +1,21 @@
+import { PostRepository, PostAssetRepository, PostLikeRepository } from '@innogram/database';
 import { Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
+import { DataSource } from 'typeorm';
 
 import { AuthModule } from '../auth/auth.module';
 import { NotificationsModule } from '../notifications/notifications.module';
 import { PostsController } from './posts.controller';
 import { PostsService } from './posts.service';
-import { Post } from '@/database/entities/post.entity';
-import { PostAsset } from '@/database/entities/post-asset.entity';
-import { PostLike } from '@/database/entities/post-like.entity';
-import { Profile } from '@/database/entities/profile.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Post, PostAsset, PostLike, Profile]), AuthModule, NotificationsModule],
+  imports: [AuthModule, NotificationsModule],
   controllers: [PostsController],
-  providers: [PostsService],
+  providers: [
+    { provide: PostRepository, useFactory: (ds: DataSource) => new PostRepository(ds), inject: [DataSource] },
+    { provide: PostAssetRepository, useFactory: (ds: DataSource) => new PostAssetRepository(ds), inject: [DataSource] },
+    { provide: PostLikeRepository, useFactory: (ds: DataSource) => new PostLikeRepository(ds), inject: [DataSource] },
+    PostsService,
+  ],
   exports: [PostsService],
 })
 export class PostsModule { }

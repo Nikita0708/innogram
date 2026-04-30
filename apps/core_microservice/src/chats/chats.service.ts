@@ -1,16 +1,11 @@
+import { ChatRepository } from '@innogram/database';
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
 
-import { ERROR_MESSAGES } from '../constants/error-messages';
-import { Chat } from '@/database/entities/chat.entity';
+import { ERROR_MESSAGES } from '@innogram/shared';
 
 @Injectable()
 export class ChatsService {
-  constructor(
-    @InjectRepository(Chat)
-    private readonly chatRepository: Repository<Chat>,
-  ) { }
+  constructor(private readonly chatRepository: ChatRepository) { }
 
   async createChat(userId: string) {
     try {
